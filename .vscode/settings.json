@@ -1,0 +1,52 @@
+{
+  // --- Flutter SDK ---
+  "dart.flutterSdkPath": "/Volumes/SSD/AppData/flutter",
+
+  // --- Nhớ device đã chọn (Chrome) cho lần chạy sau ---
+  "dart.flutterRememberSelectedDevice": true,
+
+  // --- Cmd+S là hot reload luôn ---
+  "dart.flutterHotReloadOnSave": "manual",
+  "dart.hotReloadProgress": "statusBar",
+  "editor.formatOnSave": true,
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnSave": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggestSelection": "first",
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+  },
+
+  // --- Trợ giúp lúc học: vẽ đường nối cây widget ---
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.showInspectorNotificationsForWidgetErrors": true,
+
+  // --- Debug: chỉ step vào code của mình, không lạc vào SDK ---
+  "dart.debugSdkLibraries": false,
+  "dart.debugExternalPackageLibraries": false,
+
+  // --- Cho VS Code nhẹ: bỏ qua thư mục build/native ---
+  "files.exclude": {
+    "**/.dart_tool": true,
+    "**/build": true,
+    "**/.widget_preview": true
+  },
+  "search.exclude": {
+    "**/.dart_tool": true,
+    "**/build": true,
+    "**/android": true,
+    "**/ios": true,
+    "**/macos": true,
+    "**/linux": true,
+    "**/windows": true,
+    "**/pubspec.lock": true
+  },
+  "files.watcherExclude": {
+    "**/.dart_tool/**": true,
+    "**/build/**": true
+  }
+}

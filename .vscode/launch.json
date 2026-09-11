@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Bấm F5 là chạy cái này: mở Chrome, hot reload khi save
+      "name": "birdle (Chrome)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "chrome"
+    },
+    {
+      // Chrome nhưng cửa sổ cố định cỡ điện thoại, dễ ngắm layout mobile
+      "name": "birdle (Chrome - khung mobile)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "chrome",
+      "args": ["--web-browser-flag=--window-size=430,932"]
+    },
+    {
+      // Chạy trên macOS desktop khi muốn xem bản native
+      "name": "birdle (macOS)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "macos"
+    }
+  ]
+}
